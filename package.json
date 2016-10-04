@@ -2,7 +2,7 @@
     "name": "shunt",
     "displayName": "shunt",
     "description": "Extension for line selection and multi-cursor tricks",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "mycelo",
     "icon": "images/shunt.png",
     "license": "MIT",
@@ -57,7 +57,26 @@
                 "command": "extension.shunt_select",
                 "when": "editorHasSelection && editorTextFocus"
             }
-        ]
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "extension.shunt_left",
+                    "group": "8_shunt",
+                    "when": "editorHasSelection && editorTextFocus"
+                },
+                {
+                    "command": "extension.shunt_right",
+                    "group": "8_shunt",
+                    "when": "editorHasSelection && editorTextFocus"
+                },
+                {
+                    "command": "extension.shunt_select",
+                    "group": "8_shunt",
+                    "when": "editorHasSelection && editorTextFocus"
+                }
+            ]
+        }
     },
     "scripts": {
         "vscode:prepublish": "node ./node_modules/vscode/bin/compile",

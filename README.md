@@ -20,21 +20,28 @@ Line selection and multi-cursor tricks.
 
 > **NOTES**
 >
-> + The last line is ignored unless fully selected
-> + Lines will be padded with spaces or tabs as needed
+> + As these are multi-line commands, there's no point in selecting only one line or partial lines
+> + The last line of the selection is ignored unless fully selected
+> + Lines will be padded with spaces or tabs as needed (according to the current identation setting)
+
+-----------------------------------------------------------------------------------------------------------
+
+![shunt demo](https://cdn.rawgit.com/mycelo1/vsc-shunt/master/images/capture1.gif)
 
 -----------------------------------------------------------------------------------------------------------
 
 ## How to use
 
-After selecting a simple block of lines:
+* After selecting a simple block of lines:
 
 **Feature** | **Shortcut Key**
 :--- |:---:
 **Shunt Left** | `ctrl+alt+o`
 **Shunt Right** | `ctrl+alt+p`
 **Shunt Select** | `ctrl+alt+k`
-|
+ |
+
+* Or select lines by dragging the mouse over the line numbers, then right-click the selected block to access these commands the context menu.
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -50,7 +57,7 @@ After selecting a simple block of lines:
 
 -----------------------------------------------------------------------------------------------------------
 
-## Support, issues and bug reports
+## Support, suggestions and bug reports
 
 [Create an issue](https://github.com/mycelo1/vsc-shunt/issues)
 
@@ -61,3 +68,8 @@ After selecting a simple block of lines:
 ### 1.0.0
 
 Initial release.
+
+### 1.0.1
+
+* Added context menu commands
+* Added screen capture and more instructions to README
